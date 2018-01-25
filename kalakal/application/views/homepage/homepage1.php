@@ -5,22 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="A B2B Wholesale E-commerce Platform">
     <meta name="author" content="kalakal">
-    <link rel="icon" type="image" href="./bootstrap/img/favicon.png" />
+    <link rel="icon" type="image" href="./assets/img/favicon.png" />
 
     <title>Kalakal: A B2B Wholesale E-Commerce Platform</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="./bootstrap/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="./assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <!-- Plugin CSS -->
-    <link href="./bootstrap/css/magnific-popup.css" rel="stylesheet">
+    <link href="./assets/css/magnific-popup.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="./bootstrap/css/creative.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url('bootstrap/css/sweetalert2.css')?>" >
+    <link href="./assets/css/creative.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/sweetalert2.css')?>" >
   </head>
 
   <body id="page-top">
@@ -47,7 +47,7 @@
               <a class="nav-link js-scroll-trigger" href="#newsletter">Newsletter</a>
             </li>
             <li class="nav-item" style="background: orange">
-              <img style="float: left; margin: 5px;" src="./bootstrap/img/cart-icon.png" alt="error">
+              <img style="float: left; margin: 5px;" src="./assets/img/cart-icon.png" alt="error">
               <a class="nav-link js-scroll-trigger"style="float: right;">Visit Store</a>
             </li>
           </ul>
@@ -93,27 +93,27 @@
         </div>
         <div class="row">
           <div class="col-lg-4 col-sm-6 text-center mb-4">
-            <img class="rounded-circle img-fluid d-block mx-auto" src="./bootstrap/img/store-icon.png" alt="error">
+            <img class="rounded-circle img-fluid d-block mx-auto" src="./assets/img/store-icon.png" alt="error">
             <h3 style = "color: white">Setup your own store</h3>
           </div>
           <div class="col-lg-4 col-sm-6 text-center mb-4">
-            <img class="rounded-circle img-fluid d-block mx-auto" src="./bootstrap/img/delivery-icon.png" alt="error">
+            <img class="rounded-circle img-fluid d-block mx-auto" src="./assets/img/delivery-icon.png" alt="error">
             <h3 style = "color: white">Track package deliveries</h3>
           </div>
           <div class="col-lg-4 col-sm-6 text-center mb-4">
-            <img class="rounded-circle img-fluid d-block mx-auto" src="./bootstrap/img/reports-icon.png" alt="error">
+            <img class="rounded-circle img-fluid d-block mx-auto" src="./assets/img/reports-icon.png" alt="error">
             <h3 style = "color: white">Generate sales reports</h3>
           </div>
           <div class="col-lg-4 col-sm-6 text-center mb-4">
-            <img class="rounded-circle img-fluid d-block mx-auto" src="./bootstrap/img/sales-icon.png" alt="error">
+            <img class="rounded-circle img-fluid d-block mx-auto" src="./assets/img/sales-icon.png" alt="error">
             <h3 style = "color: white">Analyze your sales</h3>
           </div>
           <div class="col-lg-4 col-sm-6 text-center mb-4">
-            <img class="rounded-circle img-fluid d-block mx-auto" src="./bootstrap/img/inventory-icon.png" alt="error">
+            <img class="rounded-circle img-fluid d-block mx-auto" src="./assets/img/inventory-icon.png" alt="error">
             <h3 style = "color: white">Monitor your product inventory</h3>
           </div>
           <div class="col-lg-4 col-sm-6 text-center mb-4">
-            <img class="rounded-circle img-fluid d-block mx-auto" src="./bootstrap/img/web-icon.png" alt="error">
+            <img class="rounded-circle img-fluid d-block mx-auto" src="./assets/img/web-icon.png" alt="error">
             <h3 style = "color: white">Connect with your customers online</h3>
           </div>
         </div>
@@ -144,7 +144,7 @@
     <footer class ="bg-secondary" style="padding: 25px; color: WHITE;" >
       <div class="row">
         <div class="col-sm-2">
-          <img src= "./bootstrap/img/kalakal-logo2.png" alt="error" style="width:190px;height:40px;">
+          <img src= "./assets/img/kalakal-logo2.png" alt="error" style="width:190px;height:40px;">
       	 </div>
          <div class=" col-sm-3">
            <ul class="list-unstyled">
@@ -177,19 +177,19 @@
     </footer>
 
     <!-- Sweet Alert -->
-    <script src="<?php echo base_url('bootstrap/js/success.js'); ?>"> </script>
-    <script src="<?php echo base_url('bootstrap/js/sweetalert2.min.js'); ?>"> </script>
+    <script src="<?php echo base_url('asstes/js/success.js'); ?>"> </script>
+    <script src="<?php echo base_url('asstes/js/sweetalert2.min.js'); ?>"> </script>
     <!-- Bootstrap core JavaScript -->
-    <script src="./bootstrap/js/jquery.min.js"></script>
-    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="./bootstrap/js/jquery.easing.min.js"></script>
-    <script src="./bootstrap/js/scrollreveal.min.js"></script>
-    <script src="./bootstrap/js/jquery.magnific-popup.min.js"></script>
+    <script src="./assets/js/jquery.easing.min.js"></script>
+    <script src="./assets/js/scrollreveal.min.js"></script>
+    <script src="./assets/js/jquery.magnific-popup.min.js"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="./bootstrap/js/creative.min.js"></script>
+    <script src="./assets/js/creative.min.js"></script>
 
   </body>
 
