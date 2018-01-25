@@ -93,8 +93,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="-242.49051"
-     inkscape:cy="668.91538"
+     inkscape:cx="22.03113"
+     inkscape:cy="491.36672"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -1222,5 +1222,12 @@
            x="247.70871"
            sodipodi:role="line">kalakal</tspan></text>
     </g>
+    <rect
+       style="opacity:0;fill:#c83737;fill-opacity:1;stroke:none;stroke-width:1.18400002;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:18.89763832;stroke-opacity:1;paint-order:fill markers stroke"
+       id="rect1332"
+       width="95.25"
+       height="64.255951"
+       x="130.0238"
+       y="69.836304" />
   </g>
 </svg>
