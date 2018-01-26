@@ -38,10 +38,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="<?php echo base_url();?>login_controller">Login</a>
+              <a class="nav-link" href="<?php echo base_url();?>Login_controller">Login</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="<?php echo base_url();?>register_controller">Register</a>
+              <a class="nav-link" href="<?php echo base_url();?>Register_controller">Register</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#features">Features</a>
@@ -134,7 +134,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           </div>
         </div>
 
-        <form method="post" action="<?php echo base_url();?>newsletter_controller/submitnl">
+        <form method="post" action="<?php echo base_url();?>Newsletter_controller/submit">
         <div class="row" >
             <input type="name" name="name" id="name" class="form-control" size="50" style = "margin: 5px" placeholder="Enter your Name" required >
             <input type="email" name="email" id="email" class="form-control" size="50" style = "margin: 5px" placeholder="Enter your Email Address" required>
