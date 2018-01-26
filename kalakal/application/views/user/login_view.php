@@ -38,10 +38,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-          <a class="nav-link" href="#login">Login</a>
+          <a class="nav-link" href="">Login</a>
          </li>
         <li class="nav-item" >
-          <a class="nav-link" href="<?php echo base_url();?>Register_controller">Register</a>
+          <a class="nav-link" href="">Register</a>
           </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#features">Features</a>
@@ -60,7 +60,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <!-- Login -->
 <section id="login">
-
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
@@ -69,35 +68,27 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <p class="mb-5">Buy Goods.</p>
           </div>
         </div>
-
-                <div class="col-lg-8 mx-auto">
-                <form method="post" action="<?php echo base_url();?>login_controller/loginvalidation">
-
-
-                  <div class="control-group">
-                      <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                          <input type="text" name= "username" size="50" style = "margin: 5px" placeholder="Username" >
-                            <p class="help-block text-danger"></p>
-                      </div>
-                  </div>
-                  <div class="control-group">
-                      <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                          <input type="password" name="password" size="50" style = "margin: 5px" placeholder="Password" >
-                            <p class="help-block text-danger"></p>
-                      </div>
-                </div>
-                <input type="submit" class="btn" name="login_customer" value="Login as Customer">
-                <input type="submit" class="btn" name="login_vendor" value="Login as Vendor">
-                <input type="submit" class="btn" name="login_manufacturer" value="Login as Manufacturer">
-                <p>
-                      Not yet a member? <a href="">Sign-up</a>
-                </p>
-              </form>
-            </div>
-
-
-
-
+        <div class="row" >
+        <div class="col-lg-8 mx-auto">
+        <form method="post" action="<?php echo base_url();?>login_controller/loginvalidation">
+          <div class="control-group">
+              <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <input type="text" name= "username" size="50" style = "margin: 5px" placeholder="Username" >
+                    <p class="help-block text-danger"></p>
+              </div>
+          </div>
+          <div class="control-group">
+              <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <input type="password" name="password" size="50" style = "margin: 5px" placeholder="Password" >
+                    <p class="help-block text-danger"></p>
+              </div>
+        </div>
+        <input type="submit" class="btn" name="login_user">Login</button>
+    <p>
+              Not yet a member? <a href="">Sign-up</a>
+    </p>
+</form>
+</div>
 </div>
     </section>
 
