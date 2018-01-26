@@ -3,13 +3,29 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Login_controller extends CI_Controller {
     public function index(){
-        $this->load->view('user/login_view');
+        $this->load->view('user_account/login_view');
     }
-    public function loginvalidation(){
+    public function logincustomer(){
       $this->load->model('login_model');
       $username = $this->input->post('username');
       $password = $this->input->post('password');
-      if($this->login_model->checklogin($username,$password)){
+      if($this->login_model->customerlogin($username,$password)){
+        echo "login succesfully";
+      }
+    }
+    public function loginvendor(){
+      $this->load->model('login_model');
+      $username = $this->input->post('username');
+      $password = $this->input->post('password');
+      if($this->login_model->vendorlogin($username,$password)){
+        echo "login succesfully";
+      }
+    }
+    public function loginmanufacturer(){
+      $this->load->model('login_model');
+      $username = $this->input->post('username');
+      $password = $this->input->post('password');
+      if($this->login_model->manufacturerlogin($username,$password)){
         echo "login succesfully";
       }
     }
