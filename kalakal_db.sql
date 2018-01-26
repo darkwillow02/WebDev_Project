@@ -2,10 +2,10 @@
 -- version 4.7.4
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Jan 25, 2018 at 04:08 PM
--- Server version: 10.1.26-MariaDB
--- PHP Version: 7.1.9
+-- Host: 127.0.0.1
+-- Generation Time: Jan 26, 2018 at 03:50 AM
+-- Server version: 10.1.28-MariaDB
+-- PHP Version: 7.1.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `kalakal_db`
+-- Database: `kalaka_db`
 --
 
 -- --------------------------------------------------------
@@ -111,6 +111,19 @@ CREATE TABLE `product_tbl` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `prod_manu_tbl`
+--
+
+CREATE TABLE `prod_manu_tbl` (
+  `prodManuID` int(11) NOT NULL,
+  `prodManuPrice` int(11) NOT NULL,
+  `prodManuQty` int(11) NOT NULL,
+  `productID` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `prod_vendor_tbl`
 --
 
@@ -118,7 +131,8 @@ CREATE TABLE `prod_vendor_tbl` (
   `prodVendorID` int(11) NOT NULL,
   `prodVendPrice` int(11) NOT NULL,
   `prodVendQty` int(11) NOT NULL,
-  `vendorID` int(11) NOT NULL
+  `vendorID` int(11) NOT NULL,
+  `productID` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -135,6 +149,33 @@ CREATE TABLE `vendor_tbl` (
   `vendEmail` varchar(11) NOT NULL,
   `vendUsername` varchar(11) NOT NULL,
   `vendPassword` varchar(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `vend_orderlist_tbl`
+--
+
+CREATE TABLE `vend_orderlist_tbl` (
+  `vendOrdListID` int(11) NOT NULL,
+  `vendOrderID` int(11) NOT NULL,
+  `vendProductID` int(11) NOT NULL,
+  `vendOrderListQty` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `vend_order_tbl`
+--
+
+CREATE TABLE `vend_order_tbl` (
+  `vendOrderID` int(11) NOT NULL,
+  `vendOrderDate` varchar(11) NOT NULL,
+  `vendOrderInvoice` varchar(11) NOT NULL,
+  `vendOrderNotes` varchar(255) NOT NULL,
+  `vendOrderPayStat` varchar(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -190,6 +231,12 @@ ALTER TABLE `vendor_tbl`
   ADD PRIMARY KEY (`vendorID`);
 
 --
+-- Indexes for table `vend_orderlist_tbl`
+--
+ALTER TABLE `vend_orderlist_tbl`
+  ADD PRIMARY KEY (`vendOrdListID`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -240,6 +287,12 @@ ALTER TABLE `prod_vendor_tbl`
 --
 ALTER TABLE `vendor_tbl`
   MODIFY `vendorID` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `vend_orderlist_tbl`
+--
+ALTER TABLE `vend_orderlist_tbl`
+  MODIFY `vendOrdListID` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
