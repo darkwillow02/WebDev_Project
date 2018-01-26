@@ -3,9 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Newsletter_controller extends CI_Controller {
 
-	public function index(){
-		$this->load->view('homepage/homepage_view',$data);
-	}
+
 
   public function submitnl()
 	{
@@ -14,14 +12,13 @@ class Newsletter_controller extends CI_Controller {
             "name" => $this->input->post("name"),
             "email" => $this->input->post("email"),
     );
-    $this->newsletter_model->insert_data("$data");
+    $this->newsletter_model->insert_newsletter($data);
     redirect(base_url()."newsletter_controller/submittednl");
 	}
 
-  public function submittednl()
-	{
-    $this->load->index()
-  }
+  public function submittednl(){
+		 $this->load->view('homepage/homepage_view');
+	}
 
 }
 ?>
