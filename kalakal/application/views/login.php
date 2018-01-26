@@ -1,4 +1,6 @@
-<?php include('servers.php') ?>
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,21 +8,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="A B2B Wholesale E-commerce Platform">
     <meta name="author" content="kalakal">
-    <link rel="icon" type="image" href="./bootstrap/img/favicon.png" />
+    <link rel="icon" type="image" href="<?php echo base_url('assets/img/favicon.png'); ?>" />
 
     <title>Kalakal: A B2B Wholesale E-Commerce Platform</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo base_url('assets/css/bootstrap.min.css'); ?>" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="./bootstrap/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo base_url('assets/css/font-awesome.min.css'); ?>" rel="stylesheet" type="text/css">
 
     <!-- Plugin CSS -->
-    <link href="./bootstrap/css/magnific-popup.css" rel="stylesheet">
+    <link href="<?php echo base_url('assets/css/magnific-popup.css'); ?>" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="./bootstrap/css/creative.min.css" rel="stylesheet">
+    <link href="<?php echo base_url('assets/css/creative.min.css'); ?>" rel="stylesheet">
 
   </head>
 
@@ -36,10 +38,10 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-          <a class="nav-link" href="login.php">Login</a>
+          <a class="nav-link" href="">Login</a>
          </li>
         <li class="nav-item" >
-          <a class="nav-link" href="register.php">Register</a>
+          <a class="nav-link" href="">Register</a>
           </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#features">Features</a>
@@ -48,7 +50,7 @@
               <a class="nav-link js-scroll-trigger" href="#newsletter">Newsletter</a>
             </li>
             <li class="nav-item" style="background: orange">
-              <img style="float: left; margin: 5px;" src="./bootstrap/img/cart-icon.png" alt="error">
+              <img style="float: left; margin: 5px;" src="<?php echo base_url('assets/img/cart-icon.png'); ?>" alt="error">
               <a class="nav-link js-scroll-trigger"style="float: right;">Visit Store</a>
             </li>
           </ul>
@@ -68,35 +70,34 @@
         </div>
         <div class="row" >
         <div class="col-lg-8 mx-auto">
-        <form method="post" action="login.php">
-        <?php include('errors.php'); ?>
-        <div class="control-group">
-        <div class="form-group floating-label-form-group controls mb-0 pb-2">
-          <input type="text" name= "username" size="50" style = "margin: 5px" placeholder="Username" >
-          <p class="help-block text-danger"></p>
+        <form method="post" action="<?php echo base_url();?>login_controller/loginvalidation">
+          <div class="control-group">
+              <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <input type="text" name= "username" size="50" style = "margin: 5px" placeholder="Username" >
+                    <p class="help-block text-danger"></p>
+              </div>
           </div>
-          </div>
-        <div class="control-group">
-        <div class="form-group floating-label-form-group controls mb-0 pb-2">
-        <input type="password" name="password" size="50" style = "margin: 5px" placeholder="Password" >
-        <p class="help-block text-danger"></p>
+          <div class="control-group">
+              <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <input type="password" name="password" size="50" style = "margin: 5px" placeholder="Password" >
+                    <p class="help-block text-danger"></p>
+              </div>
         </div>
-        </div>
-    <button type="submit" class="btn" name="login_user">Login</button>
+        <input type="submit" class="btn" name="login_user">Login</button>
     <p>
-              Not yet a member? <a href="register.php">Sign-up</a>
+              Not yet a member? <a href="">Sign-up</a>
     </p>
 </form>
 </div>
 </div>
     </section>
-    
+
 
     <!-- Footer -->
     <footer class ="bg-secondary" style="padding: 25px; color: WHITE;" >
       <div class="row">
         <div class="col-sm-2">
-          <img src= "./bootstrap/img/kalakal-logo2.png" alt="error" style="width:190px;height:40px;">
+          <img src= "<?php echo base_url('assets/img/kalakal-logo2.png'); ?>" alt="error" style="width:190px;height:40px;">
       	 </div>
          <div class=" col-sm-3">
            <ul class="list-unstyled">
@@ -128,17 +129,17 @@
        <p><center> Copyright 2018 Kalakal Ph, All rights reserved </center></p>
     </footer>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="./bootstrap/js/jquery.min.js"></script>
-    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- assets core JavaScript -->
+    <script src="<?php echo base_url('assets/js/jquery.min.js'); ?>"></script>
+    <script src="<?php echo base_url('assets/js/bootstrap.bundle.min.js'); ?>"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="./bootstrap/js/jquery.easing.min.js"></script>
-    <script src="./bootstrap/js/scrollreveal.min.js"></script>
-    <script src="./bootstrap/js/jquery.magnific-popup.min.js"></script>
+    <script src="<?php echo base_url('assets/js/jquery.easing.min.js'); ?>"></script>
+    <script src="<?php echo base_url('assets/js/scrollreveal.min.js'); ?>"></script>
+    <script src="<?php echo base_url('assets/js/jquery.magnific-popup.min.js'); ?>"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="./bootstrap/js/creative.min.js"></script>
+    <script src="<?php echo base_url('assets/js/creative.min.js'); ?>"></script>
 
   </body>
 
