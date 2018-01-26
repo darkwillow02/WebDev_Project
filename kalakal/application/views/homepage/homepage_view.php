@@ -20,7 +20,7 @@
 
     <!-- Custom styles for this template -->
     <link href="./assets/css/creative.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url('bootstrap/css/sweetalert2.css')?>" >
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/sweetalert2.css')?>" >
   </head>
 
   <body id="page-top">
@@ -38,7 +38,7 @@
               <a class="nav-link">Login</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Register</a>
+              <a class="nav-link" href="<?php echo base_url();?>homepage_controller/register">Register</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#features">Features</a>
@@ -131,13 +131,13 @@
           </div>
         </div>
 
-        <!--<form method="post" >-->
+        <form method="post" action="<?php echo base_url();?>newsletter_controller/submitnl">
         <div class="row" >
-            <input type="name" id="name" class="form-control" size="50" style = "margin: 5px" placeholder="Enter your Name" required >
-            <input type="email" id="email" class="form-control" size="50" style = "margin: 5px" placeholder="Enter your Email Address" required>
-            <input type="submit" class="btn btn-secondary btn-l js-scroll-trigger" onclick="notif();" name="submit" value="SUBMIT"/>
+            <input type="name" name="name"id="name" class="form-control" size="50" style = "margin: 5px" placeholder="Enter your Name" required >
+            <input type="email" name="email"id="email" class="form-control" size="50" style = "margin: 5px" placeholder="Enter your Email Address" required>
+            <input type="submit" class="btn btn-secondary btn-l js-scroll-trigger" name="submit" value="SUBMIT"/>
         </div>
-      <!--</form>-->
+      </form>
     </section>
 
     <!-- Footer -->
