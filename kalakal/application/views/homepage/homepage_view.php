@@ -38,10 +38,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link">Login</a>
+              <a class="nav-link" href="<?php echo base_url();?>login_controller">Login</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="<?php echo base_url();?>homepage_controller/register">Register</a>
+              <a class="nav-link" href="<?php echo base_url();?>register_controller">Register</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#features">Features</a>
