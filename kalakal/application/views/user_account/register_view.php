@@ -62,6 +62,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- Sign-Up -->
     <section id="register">
 
+
           <div class="container">
             <div class="row">
               <div class="col-lg-8 mx-auto text-center">
@@ -121,6 +122,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                       <p class="help-block text-danger"></p>
                       </div>
                       </div>
+
                 <input  type="submit" class="btn" name="reg_user" value="Create">
                 <?php
         					echo '<p class="text-danger">'.$this->session->flashdata("error").'</p>';
@@ -130,7 +132,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </p>
             </form>
             </div>
-
 
         </div>
         <div id="Vendor" class="tab-pane fade">

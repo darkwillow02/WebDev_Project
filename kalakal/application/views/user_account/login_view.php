@@ -42,7 +42,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
          </li>
         <li class="nav-item" >
           <a class="nav-link" href="<?php echo base_url();?>Register_controller">Register</a>
-          </li>
+            </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#features">Features</a>
             </li>
@@ -60,7 +60,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <!-- Login -->
 <section id="login">
-
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
@@ -145,9 +144,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </form>
   </div>
 </div>
-
   </div>
-
 </div>
     </section>
 
