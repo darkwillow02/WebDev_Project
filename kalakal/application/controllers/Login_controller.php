@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Login_controller extends CI_Controller {
     public function index(){
-        $this->load->view('user/login_view');
+        $this->load->view('user_account/login_view');
     }
     public function loginvalidation(){
       $this->load->model('login_model');

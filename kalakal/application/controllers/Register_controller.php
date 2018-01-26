@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Register_controller extends CI_Controller {
   public function index(){
-    $this->load->view('user/register_view');
+    $this->load->view('user_account/register_view');
   }
   public function registervalidation(){
     $password1 = $this->input->post("password_1");
