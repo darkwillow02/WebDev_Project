@@ -8,7 +8,7 @@ class Homepage_controller extends CI_Controller {
 	}
 
   public function register(){
-    $this->load->view('welcome_message');
+    $this->load->view('homepage/welcome_message');
   }
 
 }
