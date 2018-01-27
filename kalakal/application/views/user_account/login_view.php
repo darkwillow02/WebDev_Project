@@ -29,7 +29,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <body id="page-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-primary" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">Kalakal.ph</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,17 +37,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-          <a class="nav-link" href="#login">Login</a>
-         </li>
-        <li class="nav-item" >
-          <a class="nav-link" href="<?php echo base_url();?>Register_controller">Register</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#features">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#newsletter">Newsletter</a>
+            <li class="nav-item" >
+              <a class="nav-link" href="<?php echo base_url();?>Register_controller">Register</a>
             </li>
             <li class="nav-item" style="background: orange">
               <img style="float: left; margin: 5px;" src="<?php echo base_url('assets/img/cart-icon.png'); ?>" alt="error">
