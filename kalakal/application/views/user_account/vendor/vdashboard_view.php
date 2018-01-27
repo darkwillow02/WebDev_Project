@@ -30,7 +30,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           <li class="nav-item active">
           </li>
         </ul>
-		    <a class="nav-link" href="#"> View Store <img src="dashboard_photo/view_logo.png" width="15" height="15"> </a>
+        <a class="nav-link" href="#"> View Store <img src="dashboard_photo/view_logo.png" width="15" height="15"> </a>
           <a class="nav-link" href="#"> User Account </a>
         </form>
       </div>
