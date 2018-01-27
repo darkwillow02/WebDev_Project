@@ -18,7 +18,7 @@ class Login_controller extends CI_Controller {
       $username = $this->input->post('username');
       $password = $this->input->post('password');
       if($this->login_model->vendorlogin($username,$password)){
-        echo "login succesfully";
+        $this->load->view('user_account/vendor/vdashboard_view.php');
       }
     }
     public function loginmanufacturer(){
