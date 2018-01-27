@@ -21,7 +21,6 @@ class Login_controller extends CI_Controller {
         if($this->login_model->vendorlogin($username,$password)){
           echo "vendor";
         }
-      }
       else if($this->input->post('login_manufacturer')=="Login as Manufacturer"){
           $this->load->model('login_model');
           $username = $this->input->post('username');
@@ -31,7 +30,5 @@ class Login_controller extends CI_Controller {
           }
       }
     }
-
-
 }
 ?>
