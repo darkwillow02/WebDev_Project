@@ -62,15 +62,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <p class="mb-5">Create an account with us.</p>
               </div>
             </div>
-            <ul class="nav nav-tabs">
-                <li class="btn active"><a data-toggle="tab" href="#customer">Customer</a></li>
-                <li><a class="btn" data-toggle="tab" href="#Vendor">Vendor</a></li>
-                <li><a class="btn" data-toggle="tab" href="#Manufacturer">Manufacturer</a></li>
-            </ul>
-            <div class="tab-content">
-                <div id="customer" class="tab-pane fade in active">
-            <div class="col-lg-8 mx-auto">
-            <form method="post" action="<?php echo base_url();?>register_controller/registercustomer">
+
+                <div class="col-lg-8 mx-auto">
+            <form method="post" action="<?php echo base_url();?>register_controller/registervalidation">
                   <div class="input-group">
                   <div class="form-group floating-label-form-group controls mb-0 pb-2">
                     <input  type="text" class="form-control" name="name" size="50" style = "margin: 5px" placeholder="Name" value="" required="required" data-validation-required-message="Please enter your Name.">
@@ -113,8 +107,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                       <p class="help-block text-danger"></p>
                       </div>
                       </div>
+<<<<<<< HEAD
+                      <input type="submit" class="btn" name="create_customer" value="Create as Customer">
+                      <input type="submit" class="btn" name="create_vendor" value="Create as Vendor">
+                      <input type="submit" class="btn" name="create_manufacturer" value="Create as Manufacturer">
+=======
 
                 <input  type="submit" class="btn" name="reg_user" value="Create">
+>>>>>>> 57832e5011318343a2be89e19cb6ce8232235b78
                 <?php
         					echo '<p class="text-danger">'.$this->session->flashdata("error").'</p>';
         				?>
@@ -124,6 +124,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </form>
             </div>
 
+<<<<<<< HEAD
+
+
+
+
+
+=======
         </div>
         <div id="Vendor" class="tab-pane fade">
           <div class="col-lg-8 mx-auto">
@@ -236,6 +243,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
   </div>
       </div>
+>>>>>>> 57832e5011318343a2be89e19cb6ce8232235b78
         </section>
 
 

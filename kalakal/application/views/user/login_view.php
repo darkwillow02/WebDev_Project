@@ -29,7 +29,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <body id="page-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-primary" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">Kalakal.ph</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,8 +37,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item" >
-              <a class="nav-link" href="<?php echo base_url();?>Register_controller">Register</a>
+          <li class="nav-item">
+          <a class="nav-link" href="">Login</a>
+         </li>
+        <li class="nav-item" >
+          <a class="nav-link" href="">Register</a>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#newsletter">Newsletter</a>
             </li>
             <li class="nav-item" style="background: orange">
               <img style="float: left; margin: 5px;" src="<?php echo base_url('assets/img/cart-icon.png'); ?>" alt="error">
@@ -59,81 +68,27 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <p class="mb-5">Buy Goods.</p>
           </div>
         </div>
-
-                <div class="col-lg-8 mx-auto">
-                <form method="post" action="<?php echo base_url();?>login_controller/loginvalidation">
-
-
-                  <div class="control-group">
-                      <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                          <input type="text" name= "username" size="50" style = "margin: 5px" placeholder="Username" >
-                            <p class="help-block text-danger"></p>
-                      </div>
-                  </div>
-                  <div class="control-group">
-                      <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                          <input type="password" name="password" size="50" style = "margin: 5px" placeholder="Password" >
-                            <p class="help-block text-danger"></p>
-                      </div>
-                </div>
-                <input type="submit" class="btn" name="login_customer" value="Login as Customer">
-                <input type="submit" class="btn" name="login_vendor" value="Login as Vendor">
-                <input type="submit" class="btn" name="login_manufacturer" value="Login as Manufacturer">
-                <p>
-                      Not yet a member? <a href="">Sign-up</a>
-                </p>
-              </form>
-            </div>
-
-
-<<<<<<< HEAD
-
-
-=======
-      <div class="control-group">
-          <div class="form-group floating-label-form-group controls mb-0 pb-2">
-              <input type="text" name= "username" size="50" style = "margin: 5px" placeholder="Username" >
-                <p class="help-block text-danger"></p>
+        <div class="row" >
+        <div class="col-lg-8 mx-auto">
+        <form method="post" action="<?php echo base_url();?>login_controller/loginvalidation">
+          <div class="control-group">
+              <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <input type="text" name= "username" size="50" style = "margin: 5px" placeholder="Username" >
+                    <p class="help-block text-danger"></p>
+              </div>
           </div>
-      </div>
-      <div class="control-group">
-          <div class="form-group floating-label-form-group controls mb-0 pb-2">
-              <input type="password" name="password" size="50" style = "margin: 5px" placeholder="Password" >
-                <p class="help-block text-danger"></p>
-          </div>
-    </div>
-    <input type="submit" class="btn" name="login_user">
-    <p>
-          Not yet a member? <a href="">Sign-up</a>
-    </p>
-  </form>
-</div>
-</div>
-    <div id="Manufacturer" class="tab-pane fade">
-      <div class="col-lg-8 mx-auto">
-      <form method="post" action="<?php echo base_url();?>login_controller/loginmanufacturer">
-
-        <div class="control-group">
-            <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                <input type="text" name= "username" size="50" style = "margin: 5px" placeholder="Username" >
-                  <p class="help-block text-danger"></p>
-            </div>
+          <div class="control-group">
+              <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <input type="password" name="password" size="50" style = "margin: 5px" placeholder="Password" >
+                    <p class="help-block text-danger"></p>
+              </div>
         </div>
-        <div class="control-group">
-            <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                <input type="password" name="password" size="50" style = "margin: 5px" placeholder="Password" >
-                  <p class="help-block text-danger"></p>
-            </div>
-      </div>
-      <input type="submit" class="btn" name="login_user">
-      <p>
-            Not yet a member? <a href="">Sign-up</a>
-      </p>
-    </form>
-  </div>
+        <input type="submit" class="btn" name="login_user">Login</button>
+    <p>
+              Not yet a member? <a href="">Sign-up</a>
+    </p>
+</form>
 </div>
-  </div>
->>>>>>> 57832e5011318343a2be89e19cb6ce8232235b78
 </div>
     </section>
 
