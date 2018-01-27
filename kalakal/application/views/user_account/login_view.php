@@ -84,59 +84,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </p>
               </form>
             </div>
-
-
-<<<<<<< HEAD
-
-
-=======
-      <div class="control-group">
-          <div class="form-group floating-label-form-group controls mb-0 pb-2">
-              <input type="text" name= "username" size="50" style = "margin: 5px" placeholder="Username" >
-                <p class="help-block text-danger"></p>
           </div>
-      </div>
-      <div class="control-group">
-          <div class="form-group floating-label-form-group controls mb-0 pb-2">
-              <input type="password" name="password" size="50" style = "margin: 5px" placeholder="Password" >
-                <p class="help-block text-danger"></p>
-          </div>
-    </div>
-    <input type="submit" class="btn" name="login_user">
-    <p>
-          Not yet a member? <a href="">Sign-up</a>
-    </p>
-  </form>
-</div>
-</div>
-    <div id="Manufacturer" class="tab-pane fade">
-      <div class="col-lg-8 mx-auto">
-      <form method="post" action="<?php echo base_url();?>login_controller/loginmanufacturer">
-
-        <div class="control-group">
-            <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                <input type="text" name= "username" size="50" style = "margin: 5px" placeholder="Username" >
-                  <p class="help-block text-danger"></p>
-            </div>
-        </div>
-        <div class="control-group">
-            <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                <input type="password" name="password" size="50" style = "margin: 5px" placeholder="Password" >
-                  <p class="help-block text-danger"></p>
-            </div>
-      </div>
-      <input type="submit" class="btn" name="login_user">
-      <p>
-            Not yet a member? <a href="">Sign-up</a>
-      </p>
-    </form>
-  </div>
-</div>
-  </div>
->>>>>>> 57832e5011318343a2be89e19cb6ce8232235b78
-</div>
     </section>
-
 
     <!-- Footer -->
     <footer class ="bg-secondary" style="padding: 25px; color: WHITE;" >

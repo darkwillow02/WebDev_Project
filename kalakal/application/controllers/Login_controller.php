@@ -28,7 +28,8 @@ class Login_controller extends CI_Controller {
           if($this->login_model->manufacturerlogin($username,$password)){
             echo "manufacturer";
           }
+        }
       }
     }
-}
+  }
 ?>
