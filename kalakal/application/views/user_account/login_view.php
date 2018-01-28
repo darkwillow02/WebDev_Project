@@ -9,7 +9,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <meta name="description" content="A B2B Wholesale E-commerce Platform">
     <meta name="author" content="kalakal">
     <link rel="icon" type="image" href="<?php echo base_url('assets/img/favicon.png'); ?>" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
     <title>Kalakal: A B2B Wholesale E-Commerce Platform</title>
 
     <!-- Bootstrap core CSS -->
@@ -63,25 +63,36 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="col-lg-8 mx-auto">
                 <form method="post" action="<?php echo base_url();?>login_controller/loginvalidation">
 
-
                   <div class="control-group">
                       <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                          <input type="text" name= "username" size="50" style = "margin: 5px" placeholder="Username" >
+                        <select class="form-control"name="login_status">
+                            <option value="Login as Customer">Customer</option>
+                            <option value="Login as Vendor">Vendor</option>
+                            <option value="Login as Manufacturer">Manufacturer</option>
+                        </select>
+                    </div>
+                  </div>
+                  <div class="control-group">
+                      <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                          <input class="form-control" type="text" name= "username" size="50" style = "margin: 5px" placeholder="Username" >
                             <p class="help-block text-danger"></p>
                       </div>
                   </div>
                   <div class="control-group">
                       <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                          <input type="password" name="password" size="50" style = "margin: 5px" placeholder="Password" >
+                          <input class="form-control" type="password" name="password" size="50" style = "margin: 5px" placeholder="Password" >
                             <p class="help-block text-danger"></p>
                       </div>
-                </div>
-                <input type="submit" class="btn" name="login_customer" value="Login as Customer">
-                <input type="submit" class="btn" name="login_vendor" value="Login as Vendor">
-                <input type="submit" class="btn" name="login_manufacturer" value="Login as Manufacturer">
-                <p>
+                  </div>
+
+                  <div class="control-group">
+                    <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                      <input type="submit" class="btn" name="create" value="Create">
+                    </div>
+                  </div>
+                  <p>
                       Not yet a member? <a href="">Sign-up</a>
-                </p>
+                  </p>
               </form>
             </div>
           </div>

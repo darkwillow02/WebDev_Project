@@ -6,7 +6,7 @@ class Register_controller extends CI_Controller {
     $this->load->view('user_account/register_view');
   }
   public function registervalidation(){
-    if($this->input->post('create_customer')=="Create as Customer"){
+    if($this->input->post('register_status')=="Register as Customer"){
     $password1 = $this->input->post("password_1");
     $password2 = $this->input->post("password_2");
 		if($password1 == $password2){
@@ -28,7 +28,7 @@ class Register_controller extends CI_Controller {
       $this->index();
     }
     }
-    else if($this->input->post('create_vendor')=="Create as Vendor"){
+    else if($this->input->post('register_status')=="Register as Vendor"){
       $password1 = $this->input->post("password_1");
       $password2 = $this->input->post("password_2");
   		if($password1 == $password2){
@@ -50,7 +50,7 @@ class Register_controller extends CI_Controller {
         $this->index();
       }
     }
-    else if($this->input->post('create_Manufacturer')=="Create as Manufacturer"){
+    else if($this->input->post('register_status')=="Register as Manufacturer"){
       $password1 = $this->input->post("password_1");
       $password2 = $this->input->post("password_2");
   		if($password1 == $password2){
