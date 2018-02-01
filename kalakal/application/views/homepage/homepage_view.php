@@ -1,19 +1,4 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-?>
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="A B2B Wholesale E-commerce Platform">
-    <meta name="author" content="kalakal">
-    <link rel="icon" type="image" href="<?php echo base_url('assets/img/favicon.png')?>" />
-
     <title>Kalakal: A B2B Wholesale E-Commerce Platform</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="<?php echo base_url('assets/css/bootstrap.min.css'); ?>" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
     <link href="<?php echo base_url('assets/css/font-awesome.min.css'); ?>" rel="stylesheet" type="text/css">
@@ -23,7 +8,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
     <!-- Custom styles for this template -->
     <link href="<?php echo base_url('assets/css/creative.min.css'); ?>" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/sweetalert2.css');?>" >
+    <link href="<?php echo base_url('assets/css/sweetalert2.css');?>" rel="stylesheet">
   </head>
 
   <body id="page-top">
@@ -31,17 +16,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="<?php echo base_url();?>Homepage_controller">Kalakal.ph</a>
+        <a class="navbar-brand js-scroll-trigger" href="<?php echo base_url();?>">Kalakal.ph</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="<?php echo base_url();?>Login_controller">Login</a>
+              <a class="nav-link" href="<?php echo base_url();?>login">Login</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="<?php echo base_url();?>Register_controller">Register</a>
+              <a class="nav-link" href="<?php echo base_url();?>register">Register</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#features">Features</a>
@@ -142,58 +127,3 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
       </form>
     </section>
-
-    <!-- Footer -->
-    <footer class ="bg-secondary" style="padding: 25px; color: WHITE;" >
-      <div class="row">
-        <div class="col-sm-2">
-          <img src= "<?php echo base_url('assets/img/kalakal-logo2.png'); ?>" alt="error" style="width:190px;height:40px;">
-      	 </div>
-         <div class=" col-sm-3">
-           <ul class="list-unstyled">
-             <h4>Company</h4>
-             <li><a href="#">About Us</a></li>
-             <li><a href="#">Jobs</a></li>
-             <li><a href="#">Legal and Privacy</a></li>
-             <li><a href="#">Blog</a></li>
-           </ul>
-         </div>
-         <div class="col-sm-3">
-           <ul class="list-unstyled">
-             <h4>Services</h4>
-             <li><a href="#">Become a Partner</a></li>
-             <li><a href="#">Vendors Location</a></li>
-             <li><a href="#">Fees</a></li>
-           </ul>
-         </div>
-         <div class="col-sm-3">
-           <ul class="list-unstyled">
-             <h4>Costumer Support</h4>
-             <li><a href="#">Personal</a></li>
-             <li><a href="#">Business</a></li>
-             <li><a href="#">FAQs</a></li>
-             <li><a href="#">Terms and Conditions</a></li>
-           </ul>
-         </div>
-       </div>
-       <p><center> Copyright 2018 Kalakal Ph, All rights reserved </center></p>
-    </footer>
-
-    <!-- Sweet Alert -->
-    <script src="<?php echo base_url('assets/js/success.js'); ?>"> </script>
-    <script src="<?php echo base_url('assets/js/sweetalert2.min.js'); ?>"> </script>
-    <!-- Bootstrap core JavaScript -->
-    <script src="<?php echo base_url('assets/js/jquery.min.js'); ?>"></script>
-    <script src="<?php echo base_url('assets/js/bootstrap.bundle.min.js'); ?>"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="<?php echo base_url('assets/js/jquery.easing.min.js'); ?>"></script>
-    <script src="<?php echo base_url('assets/js/scrollreveal.min.js'); ?>"></script>
-    <script src="<?php echo base_url('assets/js/jquery.magnific-popup.min.js'); ?>"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="<?php echo base_url('assets/js/creative.min.js'); ?>"></script>
-
-  </body>
-
-</html>

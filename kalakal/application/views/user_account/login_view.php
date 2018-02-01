@@ -1,15 +1,3 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-?>
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="A B2B Wholesale E-commerce Platform">
-    <meta name="author" content="kalakal">
-    <link rel="icon" type="image" href="<?php echo base_url('assets/img/favicon.png'); ?>" />
-
     <title>Kalakal: A B2B Wholesale E-Commerce Platform</title>
 
     <!-- Bootstrap core CSS -->
@@ -31,14 +19,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-primary" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="<?php echo base_url();?>Homepage_controller">Kalakal.ph</a>
+        <a class="navbar-brand js-scroll-trigger" href="<?php echo base_url();?>">Kalakal.ph</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item" >
-              <a class="nav-link" href="<?php echo base_url();?>Register_controller">Register</a>
+              <a class="nav-link" href="<?php echo base_url();?>register">Register</a>
             </li>
             <li class="nav-item" style="background: orange">
               <img style="float: left; margin: 5px;" src="<?php echo base_url('assets/img/cart-icon.png'); ?>" alt="error">
@@ -86,55 +74,3 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
           </div>
     </section>
-
-    <!-- Footer -->
-    <footer class ="bg-secondary" style="padding: 25px; color: WHITE;" >
-      <div class="row">
-        <div class="col-sm-2">
-          <img src= "<?php echo base_url('assets/img/kalakal-logo2.png'); ?>" alt="error" style="width:190px;height:40px;">
-      	 </div>
-         <div class=" col-sm-3">
-           <ul class="list-unstyled">
-             <h4>Company</h4>
-             <li><a href="#">About Us</a></li>
-             <li><a href="#">Jobs</a></li>
-             <li><a href="#">Legal and Privacy</a></li>
-             <li><a href="#">Blog</a></li>
-           </ul>
-         </div>
-         <div class="col-sm-3">
-           <ul class="list-unstyled">
-             <h4>Services</h4>
-             <li><a href="#">Become a Partner</a></li>
-             <li><a href="#">Vendors Location</a></li>
-             <li><a href="#">Fees</a></li>
-           </ul>
-         </div>
-         <div class="col-sm-3">
-           <ul class="list-unstyled">
-             <h4>Costumer Support</h4>
-             <li><a href="#">Personal</a></li>
-             <li><a href="#">Business</a></li>
-             <li><a href="#">FAQs</a></li>
-             <li><a href="#">Terms and Conditions</a></li>
-           </ul>
-         </div>
-       </div>
-       <p><center> Copyright 2018 Kalakal Ph, All rights reserved </center></p>
-    </footer>
-
-    <!-- assets core JavaScript -->
-    <script src="<?php echo base_url('assets/js/jquery.min.js'); ?>"></script>
-    <script src="<?php echo base_url('assets/js/bootstrap.bundle.min.js'); ?>"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="<?php echo base_url('assets/js/jquery.easing.min.js'); ?>"></script>
-    <script src="<?php echo base_url('assets/js/scrollreveal.min.js'); ?>"></script>
-    <script src="<?php echo base_url('assets/js/jquery.magnific-popup.min.js'); ?>"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="<?php echo base_url('assets/js/creative.min.js'); ?>"></script>
-
-  </body>
-
-</html>
